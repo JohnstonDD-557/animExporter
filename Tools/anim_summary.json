@@ -1,0 +1,685 @@
+[
+  {
+    "file": "Rotation_Z_15rpm.anim",
+    "file_size": 242,
+    "header": {
+      "frame_count": 120,
+      "fps": 30.0,
+      "flags": [
+        1,
+        1
+      ],
+      "epsilon_or_tolerance": [
+        0.0010000000474974513,
+        0.029999999329447746,
+        0.009999999776482582
+      ],
+      "zero_byte": 0,
+      "node_count": 1,
+      "node_names": [
+        "Rotate_Z"
+      ],
+      "after_name_table_offset": 43
+    },
+    "container": {
+      "storage_mode_observed": 1,
+      "payload_len": 191,
+      "payload_off": 51,
+      "duration_or_frame_count": 120,
+      "controlled_node_count": 1,
+      "payload_fps": 30.0,
+      "body_off": 63,
+      "payload_len_matches": true,
+      "duration_matches_header": true,
+      "node_count_matches_header": true
+    },
+    "body": {
+      "encoding": "keyed_rotation_curve_sample",
+      "channel_count": 1,
+      "constant_48": 48,
+      "channel_header_observed": {
+        "value_class": 2,
+        "data_block_len": 157,
+        "unknown_a": 1,
+        "bone_index": 0,
+        "transform_channel": 2,
+        "unknown_b": 0,
+        "value_code": 17,
+        "unknown_c": 1,
+        "unknown_byte": 0
+      },
+      "key_count": 5,
+      "times_seconds": [
+        0.0,
+        1.2000000476837158,
+        2.4000000953674316,
+        3.000000238418579,
+        3.9666669368743896
+      ],
+      "quaternion_xyzw": [
+        [
+          -0.0,
+          0.0,
+          0.026176948100328445,
+          0.9996573328971863
+        ],
+        [
+          0.0,
+          0.0,
+          0.824126124382019,
+          0.56640625
+        ],
+        [
+          0.0,
+          0.0,
+          0.9426414370536804,
+          -0.3338068425655365
+        ],
+        [
+          -0.0,
+          0.0,
+          -0.6883545517921448,
+          0.7253743410110474
+        ],
+        [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ]
+      ],
+      "single_axis_angles_deg_observed": [
+        2.9999999524631065,
+        110.99999459568738,
+        219.00000026656886,
+        -87.00000037974227,
+        -0.0
+      ],
+      "tail_offset": 208,
+      "tail_bytes_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 78 b0 84 bd 02 00 00 00 00 00 00 80 3f 00 00 80 3f 00 00 80 3f"
+    }
+  },
+  {
+    "file": "Rotation2rpm.anim",
+    "file_size": 362,
+    "header": {
+      "frame_count": 901,
+      "fps": 30.0,
+      "flags": [
+        1,
+        1
+      ],
+      "epsilon_or_tolerance": [
+        0.0010000000474974513,
+        0.029999999329447746,
+        0.009999999776482582
+      ],
+      "zero_byte": 0,
+      "node_count": 1,
+      "node_names": [
+        "Rotate_Y"
+      ],
+      "after_name_table_offset": 43
+    },
+    "container": {
+      "storage_mode_observed": 1,
+      "payload_len": 311,
+      "payload_off": 51,
+      "duration_or_frame_count": 901,
+      "controlled_node_count": 1,
+      "payload_fps": 30.0,
+      "body_off": 63,
+      "payload_len_matches": true,
+      "duration_matches_header": true,
+      "node_count_matches_header": true
+    },
+    "body": {
+      "encoding": "keyed_rotation_curve_sample",
+      "channel_count": 1,
+      "constant_48": 48,
+      "channel_header_observed": {
+        "value_class": 2,
+        "data_block_len": 277,
+        "unknown_a": 1,
+        "bone_index": 0,
+        "transform_channel": 2,
+        "unknown_b": 0,
+        "value_code": 17,
+        "unknown_c": 1,
+        "unknown_byte": 0
+      },
+      "key_count": 11,
+      "times_seconds": [
+        0.0,
+        5.866666793823242,
+        6.366666793823242,
+        6.700000286102295,
+        8.666666984558105,
+        18.666667938232422,
+        19.433334350585938,
+        21.733333587646484,
+        22.533334732055664,
+        23.600000381469727,
+        30.000001907348633
+      ],
+      "quaternion_xyzw": [
+        [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ],
+        [
+          -0.0,
+          0.5764322876930237,
+          -0.0,
+          0.8171448707580566
+        ],
+        [
+          -0.0,
+          0.6184083819389343,
+          -0.0,
+          0.7858569025993347
+        ],
+        [
+          -0.0,
+          0.6454576849937439,
+          -0.0,
+          0.7637959718704224
+        ],
+        [
+          0.0,
+          0.7880107164382935,
+          0.0,
+          0.6156614422798157
+        ],
+        [
+          0.0,
+          0.9271838068962097,
+          0.0,
+          -0.37460657954216003
+        ],
+        [
+          0.0,
+          0.8941541910171509,
+          0.0,
+          -0.44775906205177307
+        ],
+        [
+          0.0,
+          0.7615383267402649,
+          0.0,
+          -0.6481198072433472
+        ],
+        [
+          -0.0,
+          -0.7046342492103577,
+          -0.0,
+          0.7095707058906555
+        ],
+        [
+          -0.0,
+          -0.6211476922035217,
+          -0.0,
+          0.7836934924125671
+        ],
+        [
+          -0.0,
+          0.0,
+          -0.0,
+          1.0
+        ]
+      ],
+      "single_axis_angles_deg_observed": [
+        -0.0,
+        70.3999991550784,
+        76.39999812379767,
+        80.40000395954891,
+        104.00000036180109,
+        224.0000005722925,
+        233.19999970891013,
+        260.7999903865071,
+        -89.6000056656908,
+        -76.79998959306036,
+        -0.0
+      ],
+      "tail_offset": 328,
+      "tail_bytes_hex": "00 00 00 00 00 00 00 00 00 88 88 08 3d 00 00 00 00 02 00 00 00 00 00 00 80 3f 00 00 80 3f 00 00 80 3f"
+    }
+  },
+  {
+    "file": "JM6031_ARP2024_Iona.anim",
+    "file_size": 718459,
+    "header": {
+      "frame_count": 206,
+      "fps": 30.0,
+      "flags": [
+        0,
+        0
+      ],
+      "epsilon_or_tolerance": [
+        0.0010000000474974513,
+        0.029999999329447746,
+        0.009999999776482582
+      ],
+      "zero_byte": 0,
+      "node_count": 87,
+      "node_names": [
+        "root",
+        "Root",
+        "arm_stretch.l",
+        "arm_stretch.r",
+        "arm_twist.l",
+        "arm_twist.r",
+        "c_index1.l",
+        "c_index1.r",
+        "c_index2.l",
+        "c_index2.r",
+        "c_index3.l",
+        "c_index3.r",
+        "c_kilt_01_01.l",
+        "c_kilt_01_01.r",
+        "c_kilt_01_01_dupli_001.l",
+        "c_kilt_01_01_dupli_001.r",
+        "c_kilt_01_02_dupli_001.l",
+        "c_kilt_01_02_dupli_001.r",
+        "c_kilt_01_03_dupli_001.l",
+        "c_kilt_01_03_dupli_001.r",
+        "c_kilt_02_01.l",
+        "c_kilt_02_01.r",
+        "c_kilt_02_01_dupli_001.l",
+        "c_kilt_02_01_dupli_001.r",
+        "c_kilt_02_02_dupli_001.l",
+        "c_kilt_02_02_dupli_001.r",
+        "c_kilt_02_03_dupli_001.l",
+        "c_kilt_02_03_dupli_001.r",
+        "c_kilt_03_01.l",
+        "c_kilt_03_01.r",
+        "c_kilt_03_01_dupli_001.l",
+        "c_kilt_03_01_dupli_001.r",
+        "c_kilt_03_02_dupli_001.l",
+        "c_kilt_03_02_dupli_001.r",
+        "c_kilt_03_03_dupli_001.l",
+        "c_kilt_03_03_dupli_001.r",
+        "c_kilt_master.x",
+        "c_kilt_master_dupli_001.x",
+        "c_middle1.l",
+        "c_middle1.r",
+        "c_middle2.l",
+        "c_middle2.r",
+        "c_middle3.l",
+        "c_middle3.r",
+        "c_pinky1.l",
+        "c_pinky1.r",
+        "c_pinky2.l",
+        "c_pinky2.r",
+        "c_pinky3.l",
+        "c_pinky3.r",
+        "c_ring1.l",
+        "c_ring1.r",
+        "c_ring2.l",
+        "c_ring2.r",
+        "c_ring3.l",
+        "c_ring3.r",
+        "c_thumb1.l",
+        "c_thumb1.r",
+        "c_thumb2.l",
+        "c_thumb2.r",
+        "c_thumb3.l",
+        "c_thumb3.r",
+        "foot.l",
+        "foot.r",
+        "forearm_stretch.l",
+        "forearm_stretch.r",
+        "forearm_twist.l",
+        "forearm_twist.r",
+        "hand.l",
+        "hand.r",
+        "head.x",
+        "leg_stretch.l",
+        "leg_stretch.r",
+        "leg_twist.l",
+        "leg_twist.r",
+        "neck.x",
+        "root.x",
+        "shoulder.l",
+        "shoulder.r",
+        "spine_01.x",
+        "spine_02.x",
+        "thigh_stretch.l",
+        "thigh_stretch.r",
+        "thigh_twist.l",
+        "thigh_twist.r",
+        "toes_01.l",
+        "toes_01.r"
+      ],
+      "after_name_table_offset": 1559
+    },
+    "container": {
+      "storage_mode_observed": 0,
+      "payload_len": 716892,
+      "payload_off": 1567,
+      "duration_or_frame_count": 206,
+      "controlled_node_count": 87,
+      "payload_fps": 30.0,
+      "body_off": 1579,
+      "payload_len_matches": true,
+      "duration_matches_header": true,
+      "node_count_matches_header": true
+    },
+    "body": {
+      "encoding": "baked_dense_pose",
+      "record_layout": [
+        "tx",
+        "ty",
+        "tz",
+        "qx",
+        "qy",
+        "qz",
+        "qw",
+        "sx",
+        "sy",
+        "sz"
+      ],
+      "order": "frame-major: for frame, then node",
+      "record_size": 40,
+      "expected_body_bytes": 716880,
+      "available_body_bytes": 716880,
+      "body_size_matches": true,
+      "sample_first_frame_first_nodes": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.7071068286895752,
+          0.0,
+          0.0,
+          0.7071067094802856,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.5000000596046448,
+          0.4999999403953552,
+          0.5,
+          0.5,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.10533855855464935,
+          -0.0019009123789146543,
+          0.009328805841505527,
+          0.037477076053619385,
+          -0.6964254975318909,
+          0.6977560520172119,
+          0.16347311437129974,
+          1.000000238418579,
+          1.0000001192092896,
+          0.9999998807907104
+        ]
+      ],
+      "sample_last_frame_first_nodes": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.7071068286895752,
+          0.0,
+          0.0,
+          0.7071067094802856,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.5000000596046448,
+          0.4999999403953552,
+          0.5,
+          0.5,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.10533855855464935,
+          -0.0019009123789146543,
+          0.009328805841505527,
+          0.037477076053619385,
+          -0.6964254975318909,
+          0.6977560520172119,
+          0.16347311437129974,
+          1.000000238418579,
+          1.0000001192092896,
+          0.9999998807907104
+        ]
+      ]
+    }
+  },
+  {
+    "file": "JM6032_ARP2024_Yamato.anim",
+    "file_size": 990653,
+    "header": {
+      "frame_count": 281,
+      "fps": 30.0,
+      "flags": [
+        0,
+        0
+      ],
+      "epsilon_or_tolerance": [
+        0.0010000000474974513,
+        0.029999999329447746,
+        0.009999999776482582
+      ],
+      "zero_byte": 0,
+      "node_count": 88,
+      "node_names": [
+        "root",
+        "Root",
+        "arm_stretch.l",
+        "arm_stretch.r",
+        "arm_twist.l",
+        "arm_twist.r",
+        "c_index1.l",
+        "c_index1.r",
+        "c_index2.l",
+        "c_index2.r",
+        "c_index3.l",
+        "c_index3.r",
+        "c_kilt_01_01.l",
+        "c_kilt_01_01.r",
+        "c_kilt_01_01_dupli_001.l",
+        "c_kilt_01_01_dupli_001.r",
+        "c_kilt_01_02.l",
+        "c_kilt_01_02.r",
+        "c_kilt_01_02_dupli_001.l",
+        "c_kilt_01_02_dupli_001.r",
+        "c_kilt_02_01.l",
+        "c_kilt_02_01.r",
+        "c_kilt_02_01_dupli_001.l",
+        "c_kilt_02_01_dupli_001.r",
+        "c_kilt_02_02.l",
+        "c_kilt_02_02.r",
+        "c_kilt_02_02_dupli_001.l",
+        "c_kilt_02_02_dupli_001.r",
+        "c_kilt_03_01.l",
+        "c_kilt_03_01.r",
+        "c_kilt_03_01_dupli_001.l",
+        "c_kilt_03_01_dupli_001.r",
+        "c_kilt_03_02.l",
+        "c_kilt_03_02.r",
+        "c_kilt_03_02_dupli_001.l",
+        "c_kilt_03_02_dupli_001.r",
+        "c_kilt_master.x",
+        "c_kilt_master_dupli_001.x",
+        "c_middle1.l",
+        "c_middle1.r",
+        "c_middle2.l",
+        "c_middle2.r",
+        "c_middle3.l",
+        "c_middle3.r",
+        "c_pinky1.l",
+        "c_pinky1.r",
+        "c_pinky2.l",
+        "c_pinky2.r",
+        "c_pinky3.l",
+        "c_pinky3.r",
+        "c_ring1.l",
+        "c_ring1.r",
+        "c_ring2.l",
+        "c_ring2.r",
+        "c_ring3.l",
+        "c_ring3.r",
+        "c_thumb1.l",
+        "c_thumb1.r",
+        "c_thumb2.l",
+        "c_thumb2.r",
+        "c_thumb3.l",
+        "c_thumb3.r",
+        "foot.l",
+        "foot.r",
+        "forearm_stretch.l",
+        "forearm_stretch.r",
+        "forearm_twist.l",
+        "forearm_twist.r",
+        "hand.l",
+        "hand.r",
+        "head.x",
+        "leg_stretch.l",
+        "leg_stretch.r",
+        "leg_twist.l",
+        "leg_twist.r",
+        "neck.x",
+        "root.x",
+        "shoulder.l",
+        "shoulder.r",
+        "spine_01.x",
+        "spine_02.x",
+        "spine_03.x",
+        "thigh_stretch.l",
+        "thigh_stretch.r",
+        "thigh_twist.l",
+        "thigh_twist.r",
+        "toes_01.l",
+        "toes_01.r"
+      ],
+      "after_name_table_offset": 1513
+    },
+    "container": {
+      "storage_mode_observed": 0,
+      "payload_len": 989132,
+      "payload_off": 1521,
+      "duration_or_frame_count": 281,
+      "controlled_node_count": 88,
+      "payload_fps": 30.0,
+      "body_off": 1533,
+      "payload_len_matches": true,
+      "duration_matches_header": true,
+      "node_count_matches_header": true
+    },
+    "body": {
+      "encoding": "baked_dense_pose",
+      "record_layout": [
+        "tx",
+        "ty",
+        "tz",
+        "qx",
+        "qy",
+        "qz",
+        "qw",
+        "sx",
+        "sy",
+        "sz"
+      ],
+      "order": "frame-major: for frame, then node",
+      "record_size": 40,
+      "expected_body_bytes": 989120,
+      "available_body_bytes": 989120,
+      "body_size_matches": true,
+      "sample_first_frame_first_nodes": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.7071068286895752,
+          0.0,
+          0.0,
+          0.7071067094802856,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.5000000596046448,
+          0.4999999403953552,
+          0.5,
+          0.5,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.10297393053770065,
+          0.008353715762495995,
+          0.008771234191954136,
+          0.09222523123025894,
+          0.795276939868927,
+          -0.37245917320251465,
+          -0.4693646728992462,
+          0.9999998211860657,
+          1.0000001192092896,
+          1.0000001192092896
+        ]
+      ],
+      "sample_last_frame_first_nodes": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.7071068286895752,
+          0.0,
+          0.0,
+          0.7071067094802856,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.5000000596046448,
+          0.4999999403953552,
+          0.5,
+          0.5,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.10297393053770065,
+          0.008353715762495995,
+          0.008771234191954136,
+          0.09222523123025894,
+          0.795276939868927,
+          -0.37245917320251465,
+          -0.4693646728992462,
+          0.9999998211860657,
+          1.0000001192092896,
+          1.0000001192092896
+        ]
+      ]
+    }
+  }
+]

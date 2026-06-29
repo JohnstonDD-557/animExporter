@@ -1,0 +1,76 @@
+import bpy
+from mathutils import Matrix
+
+def create_empties_from_bones(armature_obj):
+    """
+    为 Armature 中所有以 '_BlendBone' 结尾的骨骼创建对应的空物体，
+    并为其添加一个子空物体（世界原点，无旋转缩放），子空物体命名为骨骼原名。
+    """
+    if armature_obj.type != 'ARMATURE':
+        print("选中的对象不是臂架，跳过")
+        return
+
+    # 进入姿态模式以获取骨骼变换
+    bpy.context.view_layer.objects.active = armature_obj
+    bpy.ops.object.mode_set(mode='POSE')
+
+    pose_bones = armature_obj.pose.bones
+
+    empty_map = {}       # 骨骼名 -> 父空物体
+    parent_map = {}      # 骨骼名 -> 父骨骼名（可能为 None）
+
+    # ---------- 第一步：创建所有父空物体 ----------
+    for pbone in pose_bones:
+        bone_name = pbone.name
+        if not bone_name.endswith("_BlendBone"):
+            continue
+
+        base_name = bone_name[:-len("_BlendBone")]   # 去掉后缀
+
+        # 骨骼的世界矩阵（考虑臂架自身的变换）
+        world_mat = armature_obj.matrix_world @ pbone.matrix
+
+        # 创建父空物体（纯轴显示）
+        empty = bpy.data.objects.new(base_name, None)
+        empty.empty_display_type = 'PLAIN_AXES'
+        empty.matrix_world = world_mat
+        bpy.context.collection.objects.link(empty)
+
+        empty_map[bone_name] = empty
+        parent_map[bone_name] = pbone.parent.name if pbone.parent else None
+
+    # ---------- 第二步：建立父子关系（父空物体之间） ----------
+    for bone_name, empty in empty_map.items():
+        parent_bone_name = parent_map[bone_name]
+        if parent_bone_name and parent_bone_name in empty_map:
+            parent_empty = empty_map[parent_bone_name]
+            # 保存当前世界矩阵
+            world_mat = empty.matrix_world.copy()
+            # 设置父级
+            empty.parent = parent_empty
+            # 恢复世界变换
+            empty.matrix_world = world_mat
+
+    # ---------- 第三步：为每个父空物体创建子空物体（世界原点） ----------
+    for bone_name, parent_empty in empty_map.items():
+        # 子空物体名称 = 原始骨骼名（带 _BlendBone）
+        child_name = bone_name
+
+        # 计算局部矩阵，使子空物体的世界矩阵为单位矩阵（原点、无旋转、无缩放）
+        inv_parent = parent_empty.matrix_world.inverted()
+
+        child = bpy.data.objects.new(child_name, None)
+        child.empty_display_type = 'PLAIN_AXES'   # 或 'AXES'
+        child.parent = parent_empty
+        child.matrix_local = inv_parent   # world = parent_world @ local = I
+
+        bpy.context.collection.objects.link(child)
+
+    # 返回物体模式
+    bpy.ops.object.mode_set(mode='OBJECT')
+
+
+# ----- 使用方法 -----
+for obj in bpy.context.selected_objects:
+    if obj.type == 'ARMATURE':
+        create_empties_from_bones(obj)

@@ -1,0 +1,58 @@
+import bpy
+
+def limit_vertex_groups_to_top3(obj):
+    """
+    对物体的每个顶点：
+    - 仅保留权重最高的 3 个非零顶点组
+    - 删除其他所有顶点组引用
+    - 将保留的 3 个权重归一化（总和 = 1）
+    """
+    if obj.type != 'MESH':
+        raise TypeError("对象不是网格物体")
+    
+    # 确保在物体模式下修改顶点数据
+    if bpy.context.mode != 'OBJECT':
+        bpy.ops.object.mode_set(mode='OBJECT')
+    
+    mesh = obj.data
+    
+    for vert in mesh.vertices:
+        # 收集所有非零权重 (组索引, 权重)
+        active = [(g.group, g.weight) for g in vert.groups if g.weight > 0.0]
+        
+        # 如果非零权重组 <= 3，保持不变
+        if len(active) <= 3:
+            continue
+        
+        # 按权重降序排序，取前 3 个
+        top3 = sorted(active, key=lambda x: x[1], reverse=True)[:3]
+        total = sum(w for _, w in top3)
+        if total == 0:  # 避免除零（理论上不会发生）
+            continue
+        
+        # 归一化
+        norm_top3 = [(idx, w / total) for idx, w in top3]
+        
+        # --- 删除该顶点在【所有】顶点组中的引用 ---
+        # 获取该顶点当前引用的所有组索引（包括零权重的）
+        all_groups = [g.group for g in vert.groups]
+        for g_idx in all_groups:
+            vgroup = obj.vertex_groups[g_idx]
+            try:
+                vgroup.remove([vert.index])   # 如果顶点不在组中会忽略
+            except:
+                pass
+        
+        # --- 重新添加保留的 3 个组（已归一化权重） ---
+        for g_idx, w in norm_top3:
+            vgroup = obj.vertex_groups[g_idx]
+            vgroup.add([vert.index], w, 'REPLACE')
+
+# ----- 使用示例 -----
+if __name__ == "__main__":
+    obj = bpy.context.active_object
+    if obj is not None:
+        limit_vertex_groups_to_top3(obj)
+        print("处理完成：仅保留权重最高的 3 个顶点组，其他已删除。")
+    else:
+        print("请先选择一个网格物体。")
