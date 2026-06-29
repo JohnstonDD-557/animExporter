@@ -124,10 +124,10 @@ class ExportPnFAnim(Operator, ExportHelper):
             name = bone.name
 
             # 去除结尾的 _BlendBone
-            print(name)
+            # print(name)
             if (animNode_suffix in name):
                 name = name[:-len(animNode_suffix)]
-                print(name)
+                # print(name)
 
             name = name.encode(
                 "ascii",
