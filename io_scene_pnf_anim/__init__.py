@@ -1,7 +1,7 @@
 bl_info = {
     "name": "PnF/WoWS Animation Exporter",
     "author": "OpenAI",
-    "version": (0, 1, 0),
+    "version": (0, 0, 1),
     "blender": (5, 0, 0),
     "location": "File > Export > PnF Animation (.anim)",
     "category": "Import-Export",
